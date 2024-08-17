@@ -1,6 +1,3 @@
-<?php
-    echo "Registration Successful";
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
+    <p>Registration Successful!</p><br>
     <a href="index.php">Back to Login page</a>
 </body>
 </html>

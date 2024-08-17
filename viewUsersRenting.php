@@ -1,13 +1,13 @@
 <?php
-    session_start();
     include "db_conn.php";
+    include_once "header.php";
 
     $sql = "SELECT *, rental.rental_id FROM users
             INNER JOIN rental
             ON users.id = rental.user_id
             WHERE rental.end_time IS NULL";
     $result = mysqli_query($conn, $sql);
-    echo "<table border='1'><tr><th>User ID</th><th>Rental ID</th>
+    echo "<table border='1'><tr><th>Rental ID</th><th>User ID</th>
                                 <th>First name</th><th>Last name</th>
                                 <th>Username</th><th>User type</th>
                                 <th>Phone Number</th><th>Email</th>
@@ -15,8 +15,8 @@
     
     while($row = mysqli_fetch_assoc($result)){
         echo "<tr>";
-        echo "<td>".$row['id']."</td>";
         echo "<td>".$row['rental_id']."</td>";
+        echo "<td>".$row['id']."</td>";    
         echo "<td>".$row['firstname']."</td>";
         echo "<td>".$row['lastname']."</td>";
         echo "<td>".$row['username']."</td>";

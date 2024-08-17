@@ -10,7 +10,7 @@
     <form action="login.php" method="post">
     <label>Username:</label>
     <input type="text" name="username"><br>
-    <button type="submit">Login</button>
+    <button type="submit">Login</button><br>
     <a href="newUserForm.php">Register</a>
     </form>
 </body>

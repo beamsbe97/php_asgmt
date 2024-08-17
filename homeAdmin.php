@@ -1,5 +1,6 @@
 <?php
-
+    include "db_conn.php";
+    include "header.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,9 +12,6 @@
 <body>
     <a href="manageBikes.php">Manage Bikes</a>
     <a href="manageUsers.php">Manager Users</a>
-    <form action="logout.php" method="post">
-        <button type="submit">Logout</button>
-    </form>
 
 </body>
 </html>

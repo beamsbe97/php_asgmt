@@ -9,7 +9,6 @@
         $db_user,
         $db_pass,
         $db_name, 3307);
-
         
     }
     catch(mysqli_sql_exception){

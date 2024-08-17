@@ -1,8 +1,6 @@
 <?php
-    session_start();
     include "db_conn.php";
-    $sql = "SELECT * FROM users WHERE username='{$_SESSION['username']}'";
-    $result = mysqli_query($conn, $sql);
+    include "header.php";
 
 ?>
 <!DOCTYPE html>
@@ -14,10 +12,10 @@
 </head>
 <body>
     <h1>Hello <?php echo $_SESSION['username']?></h1>
-    <a href="viewAvailBikes.php">Available Bikes</a>
-    <a href="viewUserRentals.php">Currently Renting</a>
-    <form action="logout.php" method="post">
-        <button type="submit">Logout</button>
-    </form>
+    <a href="viewAvailBikes.php">Available Bikes</a><br>
+    <a href="searchBikesForm.php">Search Bikes</a><br>
+    <a href="viewUserRentals.php">Currently Renting</a><br>
+    <a href="viewUserPastRentals.php">View Past Rentals</a><br>
+
 </body>
 </html>

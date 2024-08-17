@@ -1,7 +1,6 @@
 <?php
-    
-    session_start();
     include "db_conn.php";
+    include_once "header.php";
     $displayAll = TRUE;
 
     $usersRenting = "SELECT * FROM users 
@@ -18,8 +17,9 @@
     <title>Manage Users</title>
 </head>
 <body>
-    <a href="viewAllUsers.php">View All users</a>
-    <a href="viewUsersRenting.php">View users renting bikes</a>
+    <a href="viewAllUsers.php">View All Users</a><br>
+    <a href="viewUsersRenting.php">View Users Renting Bikes</a><br>
+    <a href="searchUserForm.php">Search User</a><br>
     <form action="home.php" method="post">
         <button type="submit">Back</button>
     </form>

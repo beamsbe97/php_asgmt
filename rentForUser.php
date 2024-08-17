@@ -1,13 +1,5 @@
 <?php
-    session_start();
-    include "db_conn.php";
-    require_once "viewQueries.php";
-
-    $sql = "SELECT * FROM bikes";
-    $result = mysqli_query($conn, $sql);
-
-    viewBikes($result);
- 
+    include_once "header.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,8 +9,13 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="newBikeForm.php" method="post">
-        <button type="submit">Register A New Bike</button>
+    <form action="rentForUserHandle.php" method="post">
+        <label>Bike ID:</label>
+        <input type="text" name="bike_id"><br>
+        <label>User ID:</label>
+        <input type="text" name="user_id"><br>
+        <button type="submit">Create Rental</button>
+
     </form>
     <form action="manageBikes.php" method="post">
         <button type="submit">Back</button>
