@@ -13,7 +13,7 @@
 <body>
     <br>
     <div class="group">
-    <h1 style="text-align:center">Hello <?php echo $_SESSION['username']?></h1>
+    <h1 style="text-align:center">Hello <?php echo $_SESSION['firstname']?></h1>
     <a class="card" href="viewAvailBikes.php">Available Bikes</a><br>
     <a class="card" href="searchBikesForm.php">Search Bikes</a><br>
     <a class="card" href="viewRentedBikes.php">Currently Renting</a><br>

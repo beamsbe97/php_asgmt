@@ -12,14 +12,14 @@
     <form class="form" action="login.php" method="post">
     <label>Login:</label>
     <div class="input-field"><input type="text" name="username" placeholder="Username"></div><br>
+    <?php
+        if(isset($_GET['msg'])){
+            echo $_GET['msg'];
+        }
+    ?>
     <button class="btn"type="submit">Login</button><br>
     <a href="newUserForm.php">Register</a>
     </form>
     </div>
 </body>
 </html>
-<?php
-    if(isset($_GET['msg'])){
-        echo $_GET['msg'];
-    }
-?>

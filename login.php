@@ -26,7 +26,7 @@
         
     }
     else{
-        header("Location: index.php?error=Incorrect username");
+        header("Location: index.php?msg=Incorrect username");
         exit();
     }
 

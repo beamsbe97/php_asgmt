@@ -27,10 +27,7 @@
         <input type="text" name="bike_id">
         <div></div>
         <button type="submit">Confirm</button>
-
     </form>
-
-    
 </body>
 </html>
 <?php
