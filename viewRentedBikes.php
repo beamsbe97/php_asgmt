@@ -38,6 +38,6 @@
         echo $_GET['msg'];
     }
 ?>
-<form action="home.php" method="post">
+<form action=<?php echo $_SESSION['usertype']=="Admin"?"manageBikes.php":"home.php"?> method="post">
     <button type="submit">Back</button>
 </form>

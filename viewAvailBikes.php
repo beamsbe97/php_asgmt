@@ -25,8 +25,11 @@
     <form action="newRental.php" method="post">
         <label>Enter the Bike ID to rent</label>
         <input type="text" name="bike_id">
+        <div></div>
         <button type="submit">Confirm</button>
+
     </form>
+
     
 </body>
 </html>
@@ -35,6 +38,6 @@
         echo $_GET['msg'];
     }
 ?>
-<form action="home.php" method="post">
+<form action=<?php echo $_SESSION['usertype']=="Admin"?"manageBikes.php":"home.php"?> method="post">
     <button type="submit">Back</button>
 </form>

@@ -30,6 +30,6 @@
         echo $_GET['msg'];
     }
 ?>
-<form action="home.php" method="post">
+<form action="manageBikes.php" method="post">
     <button type="submit">Back</button>
 </form>
