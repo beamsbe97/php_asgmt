@@ -11,11 +11,12 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="viewAllBikes.php">View All Bikes</a><br>
-    <a href="viewAvailBikes.php">View Available Bikes</a><br>
-    <a href="viewRentedBikes.php">View Rented Bikes</a><br>
-    <a href="searchBikesForm.php">Search Bikes</a><br>
-    <a href="rentForUser.php">Rent bike for user</a><br>
+    <a class="card" href="viewAllBikes.php">View All Bikes</a><br>
+    <a class="card" href="newBikeForm.php">Register New Bike</a><br>
+    <a class="card" href="viewAvailBikes.php">View Available Bikes</a><br>
+    <a class="card" href="viewRentedBikes.php">View Rented Bikes</a><br>
+    <a class="card" href="searchBikesForm.php">Search Bikes</a><br>
+    <a class="card" href="rentForUser.php">Rent bike for user</a><br>
 
     <form action="home.php" method="post">
         <button type="submit">Back</button>

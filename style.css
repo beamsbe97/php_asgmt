@@ -1,4 +1,188 @@
-input[type="radio"]{
-    display: inline;
-    margin-right: 10px;
+ul{
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    text-align: center;
 }
+
+li{
+    float: left;
+    list-style-type: none;
+}
+
+li a{
+    display: block;
+    padding: 14px 17px;
+    background-color: #dddddd;
+    text-align: center;
+    text-decoration: none;
+    color: #008bf8;
+}
+
+li a:hover{
+    background-color: #0001;
+}
+
+.card {
+    width: 100px;
+    height: 25px;
+    border-radius: 20px;
+    background: #f5f5f5;
+    position: relative;
+    padding: 1.8rem;
+    border: 2px solid #c3c6ce;
+    transition: 0.5s ease-out;
+    overflow: visible;
+    margin:auto;
+    display: block;
+    text-decoration: none;
+
+   }
+   
+   .card-details {
+    color: black;
+    height: 100%;
+    gap: .5em;
+    display: grid;
+    place-content: center;
+   }
+   
+   .card-button {
+    transform: translate(-50%, 125%);
+    width: 60%;
+    border-radius: 1rem;
+    border: none;
+    background-color: #008bf8;
+    color: #fff;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+   }
+   
+   .text-body {
+    color: rgb(134, 134, 134);
+   }
+   
+   /*Text*/
+   .text-title {
+    font-size: 1.5em;
+    font-weight: bold;
+   }
+   
+   /*Hover*/
+   .card:hover {
+    border-color: #008bf8;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+   }
+   
+   .card:hover .card-button {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+   }
+
+   /* From Uiverse.io by Spacious74 */ 
+.container {
+    border: solid 1px #8d8d8d;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #fff;
+  }
+  
+  .container .heading {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    font-weight: bolder;
+  }
+  
+  .form {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form .btn-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .form .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-radius: 10px;
+    border: solid 1px #1034aa;
+    border-bottom: solid 1px #90c2ff;
+    background: linear-gradient(135deg, #0034de, #006eff);
+    color: #fff;
+    font-weight: bolder;
+    transition: all 0.2s ease;
+    box-shadow: 0px 2px 3px #000d3848, inset 0px 4px 5px #0070f0,
+      inset 0px -4px 5px #002cbb;
+  }
+  
+  .form .btn:active {
+    box-shadow: inset 0px 4px 5px #0070f0, inset 0px -4px 5px #002cbb;
+    transform: scale(0.995);
+  }
+  
+  .input-field {
+    position: relative;
+  }
+  
+  .input-field label {
+    position: absolute;
+    color: #8d8d8d;
+    pointer-events: none;
+    background-color: transparent;
+    left: 15px;
+    transform: translateY(0.6rem);
+    transition: all 0.3s ease;
+  }
+  
+  .input-field input {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: solid 1px #8d8d8d;
+    letter-spacing: 1px;
+    width: 100%;
+  }
+  
+  .input-field input:focus,
+  .input-field input:valid {
+    outline: none;
+    border: solid 1px #0034de;
+  }
+  
+  .input-field input:focus ~ label,
+  .input-field input:valid ~ label {
+    transform: translateY(-51%) translateX(-10px) scale(0.8);
+    background-color: #fff;
+    padding: 0px 5px;
+    color: #0034de;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 100px;
+  }
+  
+  .form .passicon {
+    cursor: pointer;
+    font-size: 1.3rem;
+    position: absolute;
+    top: 6px;
+    right: 8px;
+  }
+  
+  .form .close {
+    display: none;
+  }
+  

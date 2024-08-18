@@ -11,29 +11,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="searchUserHandle.php" method="post">
-        <label>User ID:</label>
-        <input type="text" name="id"><br>
-        <label>First name:</label>
-        <input type="text" name="firstname"><br>
-        <label>Last name:</label>
-        <input type="text" name="lastname"><br>
-        <label>Username:</label>
-        <input type="text" name="username"><br>
+<div class="container">
+    <form class="form" action="searchUserHandle.php" method="post">
+        <div class="input-field"><input type="text" name="id" placeholder="User ID"><br></div>
+        <div class="input-field"><input type="text" name="firstname" placeholder="First name"><br></div>
+        <div class="input-field"><input type="text" name="lastname" placeholder="Last name"><br></div>
+        <div class="input-field"><input type="text" name="username" placeholder="Username"><br></div>
+
+        <div>
         <label>User type:</label>
         <label><input type="radio" name="usertype" value="Admin">Administrator</label>
         <label><input type="radio" name="usertype" value="User">User</label><br>
-        <label>Phone</label>
-        <input type="text" name="phone"><br>
-        <label>Email</label>
-        <input type="text" name="email"><br>
+        </div>
         
-        
+        <div class="input-field"><input type="text" name="phone" placeholder="Phone"><br></div>
+        <div class="input-field"><input type="text" name="email" placeholder="Email"><br></div>
         <button type="submit">Search</button>
-
     </form>
-    <form action="home.php" method="post">
-        <button type="submit">Back</button>
-    </form>
+</div>
 </body>
 </html>
+<?php
+    if(isset($_GET['msg'])){
+        echo $_GET['msg'];
+    }
+?>
+<form action="home.php" method="post">
+    <button type="submit">Back</button>
+</form>

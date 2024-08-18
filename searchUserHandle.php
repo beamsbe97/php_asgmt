@@ -24,7 +24,7 @@
         viewUsers($result);
     }
     else{
-        echo"There is no user that fits your search criteria";
+        header("Location: searchUserForm.php?msg=There is no user that fits your criteria");
     }
 ?>
 <!DOCTYPE html>

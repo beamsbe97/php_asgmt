@@ -6,7 +6,6 @@
         header("Location: homeAdmin.php");
     }
     else{
-        header("Location: homeUser.php");
-    }
-    
+        header("Location: homeUser.php".(isset($_GET['msg'])?'?msg='.$_GET['msg']:''));
+    }   
 ?>

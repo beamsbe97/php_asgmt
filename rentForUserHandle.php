@@ -11,7 +11,7 @@
                         WHERE id={$_POST['bike_id']}";
         $result = mysqli_query($conn, $updateAvail);
         if($result){
-            echo "Bike rented successfully";
+            header("Location: rentForUser.php?msg=Bike rented successfully");
         }   
     }
 ?>

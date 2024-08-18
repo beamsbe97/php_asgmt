@@ -4,7 +4,7 @@
 
     $sql = "INSERT INTO bikes(rent_location, description, cost_per_hour, availability)
             VALUES('{$_POST['rent_location']}','{$_POST['description']}',
-                    '{$_POST['cost_per_hour']}', '{$_POST['availability']}')";
+                    '{$_POST['cost_per_hour']}', 'Yes')";
 
     $result = mysqli_query($conn, $sql);
     if($result){

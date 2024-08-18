@@ -17,8 +17,15 @@
         <button type="submit">Create Rental</button>
 
     </form>
-    <form action="manageBikes.php" method="post">
-        <button type="submit">Back</button>
-    </form>
+    
 </body>
 </html>
+<?php
+    if(isset($_GET['msg'])){
+        echo $_GET['msg'];
+    }
+?>
+
+<form action="manageBikes.php" method="post">
+        <button type="submit">Back</button>
+    </form>

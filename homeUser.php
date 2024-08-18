@@ -11,11 +11,19 @@
     <title></title>
 </head>
 <body>
-    <h1>Hello <?php echo $_SESSION['username']?></h1>
-    <a href="viewAvailBikes.php">Available Bikes</a><br>
-    <a href="searchBikesForm.php">Search Bikes</a><br>
-    <a href="viewUserRentals.php">Currently Renting</a><br>
-    <a href="viewUserPastRentals.php">View Past Rentals</a><br>
-
+    <br>
+    <div class="group">
+    <h1 style="text-align:center">Hello <?php echo $_SESSION['username']?></h1>
+    <a class="card" href="viewAvailBikes.php">Available Bikes</a><br>
+    <a class="card" href="searchBikesForm.php">Search Bikes</a><br>
+    <a class="card" href="viewRentedBikes.php">Currently Renting</a><br>
+    <a class="card" href="viewUserPastRentals.php">View Past Rentals</a><br>
+    </div>
 </body>
 </html>
+
+<?php
+    if(isset($_GET['msg'])){
+        echo $_GET['msg'];
+    }
+?>

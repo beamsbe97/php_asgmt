@@ -22,7 +22,7 @@
         viewBikes($result);
     }
     else{
-        echo "There is no bike that fits your criteria";
+        header("Location: searchBikesForm.php?msg=There is no bike that fits your criteria");
     }
 ?>
 <!DOCTYPE html>
@@ -33,6 +33,11 @@
     <title>Document</title>
 </head>
 <body>
+    <form action="newRental.php" method="post">
+        <label>Enter the Bike ID to rent</label>
+        <input type="text" name="bike_id">
+        <button type="submit">Confirm</button>
+    </form>
     <form action="searchBikesForm.php" method="post">
         <button type="submit">Back</button>
     </form>
