@@ -1,12 +1,15 @@
 <?php
     include "db_conn.php";
     include_once "header.php";
+    include_once "viewQueries.php";
 
     $sql = "SELECT *, rental.rental_id FROM users
             INNER JOIN rental
             ON users.id = rental.user_id
             WHERE rental.end_time IS NULL";
     $result = mysqli_query($conn, $sql);
+    viewUsers($result);
+    /*
     echo "<table border='1'><tr><th>Rental ID</th><th>User ID</th>
                                 <th>First name</th><th>Last name</th>
                                 <th>Username</th><th>User type</th>
@@ -25,7 +28,7 @@
         echo "<td>".$row['email']."</td>";
         echo "</tr>";
     }
-    echo "</table>";
+    echo "</table>";*/
 ?>
 <!DOCTYPE html>
 <html lang="en">

@@ -1,9 +1,12 @@
 <?php
-    session_start();
     include "db_conn.php";
+    include "header.php";
+    include "viewQueries.php";
 
     $allUsers="SELECT * FROM users";
-    $allUserResults = mysqli_query($conn, $allUsers);
+    $results = mysqli_query($conn, $allUsers);
+    viewUsers($results);
+    /*
     echo "<table border='1'><tr><th>User ID</th>
                                 <th>First name</th><th>Last name</th>
                                 <th>Username</th><th>User type</th>
@@ -21,7 +24,7 @@
         echo "<td>".$row['email']."</td>";
         echo "</tr>";
     }
-    echo "</table>";
+    echo "</table>";*/
 
 ?>
 <!DOCTYPE html>

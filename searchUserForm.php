@@ -23,7 +23,7 @@
         <label><input type="radio" name="usertype" value="Admin">Administrator</label>
         <label><input type="radio" name="usertype" value="User">User</label><br>
         </div>
-        
+
         <div class="input-field"><input type="text" name="phone" placeholder="Phone"><br></div>
         <div class="input-field"><input type="text" name="email" placeholder="Email"><br></div>
         <button type="submit">Search</button>
@@ -36,6 +36,6 @@
         echo $_GET['msg'];
     }
 ?>
-<form action="home.php" method="post">
+<form action="manageUsers.php" method="post">
     <button type="submit">Back</button>
 </form>
